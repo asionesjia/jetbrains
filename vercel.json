@@ -1,0 +1,16 @@
+{
+	"functions": {
+		"app/api/updateJetbrains/*": {
+			"maxDuration": 60
+		},
+		"app/api/cron/jetbrains-scan/*": {
+			"maxDuration": 60
+		}
+	},
+	"crons": [
+		{
+			"path": "/api/cron/jetbrains-scan",
+			"schedule": "0 1 * * *"
+		}
+	]
+}

@@ -1,0 +1,11 @@
+@keyframes scrollLeftRight {
+    0% { transform: translateX(4px); }
+    50% { transform: translateX(calc(-100% + 150px)); }
+    100% { transform: translateX(4px); }
+}
+
+.scroll-container:hover .scroll-text{
+    display: inline-block;
+    animation: scrollLeftRight 5s linear infinite;
+}
+
